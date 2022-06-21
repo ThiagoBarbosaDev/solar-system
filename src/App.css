@@ -1,3 +1,108 @@
-.App {
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial , Helvetica , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 50px 0;
   text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.planet-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.planet-card {
+  height: 20vh;
+}
+
+.planet-container p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.planetaMercúrio {
+  width: 48px;
+}
+
+.planetaVênus {
+  width: 121px;
+}
+
+.planetaTerra {
+  width: 127px;
+}
+
+.planetaMarte {
+  width: 67px;
+}
+
+.planetaJúpiter {
+  width: 300px;
+}
+
+.planetaSaturno {
+  width: 250px;
+}
+
+.planetaUrano {
+  width: 145px;
+}
+
+.planetaNetuno {
+  width: 140px;
+}
+
+.missions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px;
+  max-width: 950px;
+}
+
+.mission-card {
+  border: 2px solid white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+  justify-content: center;
+  padding: 40px;
+  width: 300px;
+}
+
+.mission-card p {
+  font-family: Arial , Helvetica , sans-serif;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.mission-card p:nth-child( 1 ) {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
