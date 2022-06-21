@@ -2,6 +2,7 @@ import React from 'react';
 import Planets from '../data/planets';
 import PlanetCard from './PlanetCard';
 import Title from './Title';
+import Missions from './Missions';
 
 class SolarSystem extends React.Component {
   // Function renderPlanetCards(name, image) = {
@@ -9,7 +10,6 @@ class SolarSystem extends React.Component {
   // }
 
   render() {
-    // const planets = Planets;
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
@@ -20,6 +20,7 @@ class SolarSystem extends React.Component {
             key={ planet.name }
           />
         ))}
+        <Missions />
       </div>
     );
   }
